@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360">
+  <rect width="100%" height="100%" fill="#071026" rx="12"/>
+  <g transform="translate(60,20)">
+    <!-- simplified Tetris board representation -->
+    <rect x="0" y="0" width="240" height="480" fill="#08121a" rx="8"/>
+    <!-- falling piece (animated via CSS when embedded) -->
+    <g id="piece" transform="translate(80,40)">
+      <rect x="0" y="0" width="36" height="36" rx="6" fill="#00f0f0" />
+      <rect x="36" y="0" width="36" height="36" rx="6" fill="#00f0f0" />
+      <rect x="72" y="0" width="36" height="36" rx="6" fill="#00f0f0" />
+      <rect x="108" y="0" width="36" height="36" rx="6" fill="#00f0f0" />
+    </g>
+    <text x="280" y="40" fill="#fff" font-family="Rubik, sans-serif" font-size="20">Live Demo</text>
+    <text x="280" y="70" fill="#cfe8ff" font-family="Rubik, sans-serif" font-size="14">Open the project in your browser to try it.</text>
+  </g>
+</svg>

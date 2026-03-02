@@ -20,27 +20,51 @@
                     <div id="score">Score: <span id="score-value">0</span></div>
                     <div id="lines">Lines: <span id="lines-value">0</span></div>
                     <div id="level">Level: <span id="level-value">0</span></div>
+                    <div id="highscore">High Score: <span id="highscore-value">0</span></div>
                 </div>
-                <div class="panel">
-                    <h3>Next Piece</h3>
-                    <canvas id="next" width="120" height="120" aria-label="Next piece preview"></canvas>
+                <div class="panel preview">
+                    <div class="preview-block">
+                        <h3>Hold</h3>
+                        <canvas id="hold" width="120" height="120" aria-label="Hold piece preview"></canvas>
+                    </div>
+                    <div class="preview-block">
+                        <h3>Next Piece</h3>
+                        <canvas id="next" width="120" height="120" aria-label="Next piece preview"></canvas>
+                    </div>
                 </div>
                 <div class="panel controls">
+                    <div class="buttons">
+                        <button id="start-btn">Start</button>
+                        <button id="pause-btn">Pause</button>
+                        <button id="sound-btn">Sound: On</button>
+                    </div>
                     <h3>Controls</h3>
                     <ul>
                         <li>← / → : Move</li>
                         <li>↑ : Rotate</li>
                         <li>↓ : Soft drop</li>
                         <li>Space : Hard drop</li>
+                        <li>C : Hold</li>
                         <li>P : Pause</li>
                     </ul>
                 </div>
             </div>
         </div>
         <footer>
-            <small>Made with HTML5 Canvas & Vanilla JS</small>
+           <small>Made with ❤️ by Himesha Jayaneth from Sri Lanka | <a href="https://github.com/himeshajayaneth" target="_blank">GitHub</a></small>
         </footer>
     </div>
+
+    <!-- Mobile touch controls -->
+    <div id="mobile-controls" aria-hidden="true">
+        <button class="m-btn" data-action="left">◀</button>
+        <button class="m-btn" data-action="rotate">⟳</button>
+        <button class="m-btn" data-action="right">▶</button>
+        <button class="m-btn" data-action="down">↓</button>
+        <button class="m-btn" data-action="drop">⤓</button>
+        <button class="m-btn" data-action="hold">Hold</button>
+    </div>
+
     <script src="tetris.js"></script>
 </body>
 </html>

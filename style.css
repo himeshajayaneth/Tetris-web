@@ -47,10 +47,25 @@ canvas#next{ width:120px; height:120px; background: linear-gradient(180deg,#0b12
 
 footer{ text-align:center; margin-top:10px; opacity:0.7; font-size:0.85rem }
 
-/* responsive */
+.preview{ display:flex; gap:10px; justify-content:space-between }
+.preview-block{ flex:1; text-align:center }
+.preview-block h3{ font-size:0.95rem; margin-bottom:8px }
+.buttons{ display:flex; gap:8px; justify-content:center; margin-bottom:8px }
+.buttons button{ background:linear-gradient(180deg,#26313a,#111827); color:#fff; border:1px solid rgba(255,255,255,0.06); padding:8px 10px; border-radius:6px; cursor:pointer }
+.buttons button:hover{ transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,0.4) }
+
+#mobile-controls{ position:fixed; bottom:18px; left:50%; transform:translateX(-50%); display:flex; gap:6px; background:transparent; z-index:40 }
+.m-btn{ background:linear-gradient(180deg,#1f2937,#111827); color:#fff; border:none; padding:12px 14px; border-radius:8px; font-size:18px; opacity:0.95 }
+.m-btn:active{ transform:scale(0.98) }
+
 @media (max-width:820px){
     #game-wrapper{ width: 94vw }
     #game-container{ flex-direction:column; align-items:center }
     #info{ width:100% }
     canvas#tetris{ width: 240px; height:480px }
+    #mobile-controls{ display:flex }
+}
+
+@media (min-width:821px){
+    #mobile-controls{ display:none }
 }
